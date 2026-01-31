@@ -566,8 +566,8 @@
                         </div>
                     </div>
                 </td>
-                <td class="td-white"><input type="number" step="0.01" class="input-mini" id="amt_${d.id}" value="${currentAmt}" oninput="updateMix('${d.id}')"></td>
-                <td class="td-white"><input type="number" step="0.01" class="input-mini" id="vol_${d.id}" value="${currentVol}" oninput="updateMix('${d.id}')"></td>
+                <td class="td-white"><input type="number" step="5" class="input-mini" id="amt_${d.id}" value="${currentAmt}" oninput="updateMix('${d.id}')"></td>
+                <td class="td-white"><input type="number" step="10" class="input-mini" id="vol_${d.id}" value="${currentVol}" oninput="updateMix('${d.id}')"></td>
                 <td class="td-input"><input type="number" step="0.01" class="input-dose" id="input_${d.id}" value="${val}" placeholder="0" oninput="handleInput('${d.id}')"></td>
                 <td class="td-unit ${d.uTxt}">${inputUnit}</td>
                 <td class="td-result"><span id="output_${d.id}" class="res-val">0.00</span><span class="res-unit">${outputUnit}</span></td>
@@ -838,4 +838,5 @@
 </script>
 </body>
 </html>
+
 
