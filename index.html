@@ -255,7 +255,7 @@
     <div class="free-section">
         <span class="free-section-title">1. 약물 믹스 정보 (Mix)</span>
         <div class="free-row">
-            <input type="number" id="free-amt" class="free-input" placeholder="약물량" oninput="calcFree()" step="0.01">
+            <input type="number" id="free-amt" class="free-input" placeholder="약물량" oninput="calcFree()" step="10">
             <select id="free-amt-unit" class="free-select" onchange="calcFree()">
                 <option value="mg">mg</option>
                 <option value="mcg">mcg</option>
@@ -264,7 +264,7 @@
             </select>
         </div>
         <div class="free-row">
-            <input type="number" id="free-vol" class="free-input" placeholder="수액량" oninput="calcFree()" step="0.01">
+            <input type="number" id="free-vol" class="free-input" placeholder="수액량" oninput="calcFree()" step="10">
             <span style="font-weight:700; padding:0 10px; color:#555;">cc (ml)</span>
         </div>
     </div>
@@ -838,3 +838,4 @@
 </script>
 </body>
 </html>
+
