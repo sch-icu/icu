@@ -30,25 +30,19 @@
             --u-mghr: #ffcc80; --u-mcghr: #ce93d8;
         }
         body { margin:0; padding:0; font-family:'Noto Sans KR',sans-serif; background:var(--bg-body); color:var(--text-main); -webkit-text-size-adjust:100%; transition:0.3s; }
-        
-        /* Header */
         .header { background:var(--bg-header); padding:20px 10px 15px 10px; position:sticky; top:0; z-index:1000; box-shadow:0 2px 8px rgba(0,0,0,0.3); display:flex; flex-direction:column; align-items:center; }
         .btn-darkmode { position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.3); border:1px solid rgba(255,255,255,0.3); color:#fff; border-radius:50%; width:40px; height:40px; font-size:1.2rem; cursor:pointer; display:flex; align-items:center; justify-content:center; }
         .hospital-title { margin:0; font-size:2.3rem; font-weight:900; color:white; text-align:center; margin-bottom:5px; margin-top:15px; text-shadow:0 2px 4px rgba(0,0,0,0.3); line-height:1.1; }
         .dept-title { margin:0 0 10px 0; font-size:1.5rem; font-weight:500; color:#bbdefb; opacity:0.95; }
-
-        /* Dept Selector Colors */
         .dept-switch-row { display:flex; width:100%; max-width:600px; gap:6px; margin-bottom:12px; }
         .dept-btn { flex: 1; padding: 10px 0; border: 1px solid rgba(255,255,255,0.4); background: rgba(0,0,0,0.25); color: #ccc; border-radius: 8px; font-size: 1rem; font-weight: 800; cursor: pointer; transition: 0.2s; white-space: nowrap; }
         #btn-sicu.active { background: #4db6ac; color: white; border-color: #80cbc4; box-shadow: 0 0 10px rgba(77,182,172, 0.6); transform: scale(1.02); }
         #btn-ccu.active { background: #f06292; color: white; border-color: #f48fb1; box-shadow: 0 0 10px rgba(240,98,146, 0.6); transform: scale(1.02); }
         #btn-micu.active { background: #7986cb; color: white; border-color: #9fa8da; box-shadow: 0 0 10px rgba(121,134,203, 0.6); transform: scale(1.02); }
-
         .control-top-row { display:flex; width:100%; max-width:600px; gap:8px; margin-bottom:8px; justify-content: space-between; }
         .weight-container { flex:0 0 auto; background: #d32f2f; border:1px solid rgba(255,255,255,0.3); border-radius:8px; padding:5px 15px; display:flex; align-items:center; gap:8px; }
         .weight-label { font-size:1rem; font-weight:700; color:white; white-space:nowrap; }
         .weight-input { width:70px; height:42px; border:2px solid #ffcdd2; border-radius:6px; text-align:center; font-size:1.7rem; font-weight:900; background:#fff; color:#d32f2f; }
-        
         .btn-group { display:flex; flex-wrap: wrap; justify-content: center; gap:4px; flex:1; }
         .btn-common { flex: 1 1 30%; border-radius:8px; font-weight:800; cursor:pointer; box-shadow:0 2px 4px rgba(0,0,0,0.2); padding:10px 0; font-size: 0.8rem; letter-spacing: -0.5px; white-space: nowrap; display: flex; align-items: center; justify-content: center; }
         .btn-vent { background:#009688; color:#fff; border:2px solid #00796b; }
@@ -56,17 +50,14 @@
         .btn-heparin { background:#ff9800; color:#fff; border:2px solid #f57c00; }
         .btn-intubation { background:#3f51b5; color:#fff; border:2px solid #283593; }
         .btn-setting { background:#fdd835; color:#000; border:2px solid #fbc02d; }
-
         .mode-row { display:flex; gap:5px; width:100%; max-width:600px; margin-top: 5px; }
         .mode-btn { flex:1; border:none; border-radius:6px; padding:12px 0; font-size:1rem; font-weight:700; cursor:pointer; background:rgba(0,0,0,0.25); color:#cfd8dc; transition:0.2s; white-space:nowrap; }
         .mode-btn.active { background:#fff; color:var(--sch-blue); box-shadow:0 1px 3px rgba(0,0,0,0.2); }
-
         .table-wrap { padding:10px 5px 200px 5px; max-width:800px; margin:0 auto; }
         table { width:100%; border-collapse:separate; border-spacing:0; background:var(--bg-card); border-radius:8px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,0.1); }
         th { background:var(--bg-th); color:var(--text-th); padding:10px 2px; font-size:0.8rem; font-weight:700; text-align:center; border-bottom:1px solid var(--border-color); }
         td { text-align:center; vertical-align:middle; height:65px; border-bottom:1px solid var(--border-color); border-right:1px solid var(--border-color); padding:0; }
         td:last-child { border-right:none; } tr:last-child td { border-bottom:none; }
-
         .td-name { width:26%; padding:0 4px; font-weight:700; cursor:pointer; }
         .drug-cell-container { display:flex; align-items:center; }
         .copy-btn-area { padding-right:4px; display:flex; align-items:center; }
@@ -76,7 +67,6 @@
         .drug-title { font-size:0.95rem; line-height:1.1; margin-bottom:2px; word-break:break-all; }
         .drug-mix-info { font-size:0.65rem; font-weight:500; opacity:0.8; display:block; color:inherit; line-height:1.2; }
         .info-icon { font-size:0.8rem; opacity:0.6; border:1px solid currentColor; border-radius:50%; width:14px; height:14px; display:inline-flex; align-items:center; justify-content:center; }
-
         .td-white { width:12%; background:var(--bg-card); color:var(--text-main); }
         .input-mini { width:100%; border:none; text-align:center; font-size:1.3rem; font-weight:700; color:var(--text-main); background:transparent; padding:0; }
         .td-input { width:18%; background:var(--bg-input-yellow); }
@@ -85,24 +75,19 @@
         .td-result { width:19%; font-weight:900; }
         .res-val { font-size:1.5rem; display:block; line-height:1; }
         .res-unit { font-size:0.75rem; font-weight:500; margin-top:3px; opacity:0.8; }
-
         .txt-standard { color: var(--u-std) !important; }
         .txt-vaso { color: var(--u-vaso) !important; }
         .txt-mcgmin { color: var(--u-mcgmin) !important; }
         .txt-mghr { color: var(--u-mghr) !important; }
         .txt-mcghr { color: var(--u-mcghr) !important; }
-
         .theme-red .td-name, .theme-red .td-result { background:var(--bg-red); color:var(--text-red); }
         .theme-blue .td-name, .theme-blue .td-result { background:var(--bg-blue); color:var(--text-blue); }
         .theme-green .td-name, .theme-green .td-result { background:var(--bg-green); color:var(--text-green); }
         .theme-yellow .td-name, .theme-yellow .td-result { background:var(--bg-yellow); color:var(--text-yellow); }
-
         .footer-bar { position:fixed; bottom:0; left:0; width:100%; background:var(--bg-card); border-top:1px solid var(--border-color); padding:10px; display:flex; flex-direction:column; align-items:center; box-shadow:0 -2px 10px rgba(0,0,0,0.1); z-index:2000; }
         .btn-copy { width:95%; max-width:600px; padding:12px; background:#2196f3; color:white; border:none; border-radius:8px; font-size:1.1rem; font-weight:800; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.2); }
         .footer-disclaimer { width:95%; max-width:600px; font-size:0.65rem; color:var(--text-main); opacity:0.7; margin-top:6px; margin-bottom:2px; text-align:center; line-height:1.2; word-break:keep-all; }
         .copyright-text { font-size: 0.65rem; color: #999; margin-top: 0; text-align: center; line-height: 1.2; font-weight: 500; }
-
-        /* Popup Styles */
         .popup-panel { display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); width:85%; max-width:350px; background:var(--bg-card); color:var(--text-main); z-index:3000; padding:20px; border-radius:12px; box-shadow:0 5px 25px rgba(0,0,0,0.5); max-height:80vh; overflow-y:auto; border:1px solid var(--border-color); }
         .overlay { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:2500; }
         .check-item { display:flex; align-items:center; margin:10px 0; font-size:1rem; font-weight:500; }
@@ -111,8 +96,6 @@
         .btn-confirm-final { width:100%; padding:15px; border:none; border-radius:8px; font-size:1.2rem; font-weight:900; cursor:pointer; margin-top:20px; margin-bottom:10px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
         .btn-reset-final { width:100%; padding:10px; background:#e53935; color:white; border:none; border-radius:8px; font-size:0.9rem; font-weight:700; cursor:pointer; margin-top:10px; opacity:0.9; }
         .btn-popup-close { width:100%; padding:10px; background:#555; color:white; border:none; border-radius:8px; margin-top:15px; font-size:1rem; font-weight:700; cursor:pointer; }
-
-        /* Ventilator Styles */
         .vent-row { display:flex; align-items:center; gap:5px; justify-content: space-between; margin-bottom: 15px; }
         .vent-label { font-weight:700; color:var(--sch-blue); }
         .gender-btn { flex:1; padding:12px; border:1px solid #ccc; background:#f0f0f0; color:#666; cursor:pointer; font-weight:700; border-radius:6px; transition:0.2s; }
@@ -125,8 +108,6 @@
         .pbw-display { text-align:center; font-size:2rem; font-weight:900; color:#d32f2f; margin:10px 0; background:#ffebee; padding:10px; border-radius:8px; }
         .btn-vent-print { width:100%; padding:12px; background:#607d8b; color:white; border:none; border-radius:8px; font-size:1rem; font-weight:800; cursor:pointer; margin-top:15px; box-shadow:0 4px 6px rgba(0,0,0,0.2); }
         .free-input { flex:1; padding:8px; border:1px solid #ccc; border-radius:4px; font-size:1.1rem; text-align:center; font-weight:700; background:#fff; color:#333; }
-
-        /* Heparin & Intubation Styles */
         .hep-protocol-box { border: 2px solid #ffcc80; border-radius: 8px; margin-bottom: 20px; overflow: hidden; }
         .hep-protocol-title { background: #ffe0b2; color: #e65100; padding: 10px; font-weight: 900; text-align: center; border-bottom: 1px solid #ffcc80; }
         .hep-calc-row { display: flex; justify-content: space-between; align-items: center; padding: 8px; background: #fff; border-bottom: 1px solid #eee; }
@@ -140,8 +121,6 @@
         .hep-action-box { background:#fbe9e7; padding:15px; border-radius:8px; text-align:center; margin-top:15px; border:2px solid #ff5722; }
         .hep-action-text { font-size:1.1rem; font-weight:900; color:#bf360c; display:block; margin-bottom:5px; }
         .hep-new-rate { font-size:2rem; font-weight:900; color:#d84315; }
-
-        /* Yale Result Styles */
         .yale-result-box { margin-top:15px; padding:15px; border-radius:8px; display:none; line-height:1.5; font-size:0.9rem; color:white; animation:fadeInUp 0.3s ease-out; }
         @keyframes fadeInUp { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
         .yale-res-success { background:linear-gradient(135deg, #16a085, #27ae60); }
@@ -150,18 +129,68 @@
         .yale-bold { font-weight:900; text-decoration:underline; font-size:1.05rem; }
         .yale-small-inst { font-size:0.85em; opacity:0.95; line-height:1.3; display:block; margin:4px 0; }
 
-        /* Print Settings */
+        /* =============================================
+           PRINT STYLES - Ventilator 결과 출력 전용
+           ============================================= */
         @media print {
-            body { background: white !important; color: black !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-            .header, .footer-bar, .overlay, .table-wrap { display: none !important; }
+            /* 색상 강제 적용 */
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+            /* 전체 페이지 리셋 */
+            html, body {
+                margin: 0 !important;
+                padding: 0 !important;
+                background: white !important;
+                color: black !important;
+                width: 100% !important;
+                height: auto !important;
+            }
+            /* 화면 UI 전부 숨김 */
+            .header, .footer-bar, .table-wrap, .overlay { display: none !important; }
+            /* 모든 팝업 기본 숨김 */
             .popup-panel { display: none !important; }
-            #vent-panel { display: block !important; position: static !important; width: 100mm !important; max-width: 100mm !important; box-shadow: none !important; border: 1px solid #999 !important; }
-            #vent-panel .btn-popup-close, #vent-panel .btn-vent-print { display: none !important; }
+            /* vent-panel만 전체 페이지로 표시 - 1/4 크기 출력 */
+            #vent-panel {
+                display: block !important;
+                position: static !important;
+                transform: none !important;
+                top: auto !important;
+                left: auto !important;
+                width: 200mm !important;
+                max-width: 200mm !important;
+                max-height: none !important;
+                overflow: visible !important;
+                box-shadow: none !important;
+                border: none !important;
+                border-radius: 0 !important;
+                padding: 5mm 8mm !important;
+                margin: 0 !important;
+                background: white !important;
+                box-sizing: border-box !important;
+                zoom: 0.5 !important;
+                page-break-inside: avoid !important;
+            }
+            /* 버튼 숨김 */
+            #vent-panel .btn-popup-close,
+            #vent-panel .btn-vent-print { display: none !important; }
+            /* 색상 유지 */
+            #vent-panel h3 { color: #00796b !important; }
+            .gender-btn.active { background: #0055b8 !important; color: white !important; }
+            .pbw-display { background: #ffebee !important; color: #d32f2f !important; border-radius: 8px !important; }
+            .vent-section-header { border-left: 4px solid #009688 !important; color: #455a64 !important; }
+            .vt-item { background: #f9f9f9 !important; border: 1px solid #b2dfdb !important; border-radius: 6px !important; }
+            .vt-label { color: #00796b !important; }
+            .vt-val { color: #004d40 !important; }
+            /* 그리드/레이아웃 유지 */
+            .vent-row { display: flex !important; }
+            .vt-grid { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 5px !important; }
         }
     </style>
 </head>
 <body>
-
 <div class="header">
     <button class="btn-darkmode" onclick="toggleDarkMode()">🌙</button>
     <h1 class="hospital-title">순천향대학교 천안병원</h1>
@@ -288,6 +317,9 @@
         <div style="font-size:0.75rem; color:var(--text-main); margin-top:8px; opacity:0.8;">* Target BST 3회 연속 도달 시 측정간격 q 1h → q 2h 변경</div>
     </div>
     <div style="font-size:0.7rem; color:#7f8c8d; line-height:1.4; margin-bottom:10px; text-align:center;">본 프로그램은 간호 업무 보조 도구입니다. 계산 결과는 참고용이며, 환자의 개별적인 임상 상태와 주치의 처방이 우선합니다.</div>
+    <div style="text-align:center; margin-bottom:10px;">
+        <a href="https://doi.org/10.1177/10600280221074683" target="_blank" style="color:#7f8c8d; font-size:0.7rem; text-decoration:none; opacity:0.8;">Reference: 10.1177/10600280221074683</a>
+    </div>
     <button class="btn-popup-close" onclick="closeAllPopups()">닫기</button>
 </div>
 
@@ -392,7 +424,6 @@
         { id: 'vaso', name: 'Vasopressin', sub: '(20IU/1amp)', amt: 20, vol: 100, unit: 'Unit/min', type: 2, color: 'red', uTxt: 'txt-vaso', info: "* Maintenance: 0.01~0.04 unit/min (Max 0.1)\n* Standard mix: 20IU + D5W 100ml" },
         { id: 'dobu', name: 'Dobutamine', sub: '(250mg/1amp)', amt: 500, vol: 250, unit: 'mcg/kg/min', type: 1, color: 'red', uTxt: 'txt-standard', info: "* Maintenance: 1~6 mcg/kg/min (Max 20)\n* Standard mix: 500mg + D5W 250ml" },
         { id: 'dopa', name: 'Dopamine', sub: '(200mg/1amp)', amt: 400, vol: 250, unit: 'mcg/kg/min', type: 1, color: 'red', uTxt: 'txt-standard', info: "* Maintenance: 2~30 mcg/kg/min\n* Standard mix: 400mg + D5W 200ml" },
-        
         { id: 'ntg', name: 'Nitroglycerin', sub: '(50mg/50cc/1vial)', amt: 50, vol: 50, unit: 'mcg/kg/min', type: 1, color: 'green', uTxt: 'txt-standard', info: "* Start dose: 5 mcg/min\n* Inc by 5 mcg/min every 3~5min (Max 20)\n* Standard mix: 100mg + D5W 200ml" },
         { id: 'mc_ntg', name: 'MC Nitroglycerin', sub: '(100mg/500cc)', amt: 100, vol: 500, unit: 'mcg/min', type: 5, color: 'green', uTxt: 'txt-mcgmin', info: "* Start dose: 5 mcg/min\n* Inc by 5 mcg/min every 3~5min (Max 20)\n* Standard mix: 100mg + D5W 200ml" },
         { id: 'esmolol', name: 'Esmolol', sub: '(100mg/10ml/1vial)', amt: 2000, vol: 500, unit: 'mcg/kg/min', type: 1, color: 'green', uTxt: 'txt-standard', info: "* Range: 50 ~ 200 mcg/kg/min\n* Standard mix: 2000mg + NS 500ml" },
@@ -400,7 +431,6 @@
         { id: 'diltia', name: 'Diltiazem', sub: '(50mg/1vial)', amt: 100, vol: 100, unit: 'mg/hr', type: 6, color: 'green', uTxt: 'txt-mghr', info: "* Range: 5 ~ 15 mg/hr\n* Standard mix: 100mg + NS 100ml" },
         { id: 'iso', name: 'Isoproterenol', sub: '(0.2mg/1ml/1amp)', amt: 1, vol: 100, unit: 'mcg/min', type: 5, color: 'green', uTxt: 'txt-mcgmin', info: "* Maintenance: 0.5~5 mcg/min (Max 20)\n* Standard mix: 1mg + NS/5DW 100ml" },
         { id: 'milri', name: 'Milrinone', sub: '(10mg/10ml/1amp)', amt: 20, vol: 100, unit: 'mcg/kg/min', type: 1, color: 'green', uTxt: 'txt-standard', info: "* Loading: 50mcg/kg (10min)\n* Maintenance: 0.375~0.75 mcg/kg/min" },
-
         { id: 'remi', name: 'Remifentanil', sub: '(5mg/1vial)', amt: 10, vol: 100, unit: 'mcg/kg/min', type: 1, color: 'blue', uTxt: 'txt-standard', info: "* Maintenance: 0.025~0.2 mcg/kg/min\n* Standard mix: 10mg + D5W 100ml" },
         { id: 'propo', name: 'Propofol', sub: '(1000mg/50cc/1bt)', amt: 1000, vol: 50, unit: 'mg/kg/hr', type: 3, color: 'blue', uTxt: 'txt-mghr', info: "* Loading: 0.5~1 mg/kg\n* Maintenance: 0.1~2 mg/kg/hr (Max 4)\n* Standard mix: Premix" },
         { id: 'precedex', name: 'Dexmedetomidine', sub: '(1000mcg/250ml/1bt)', amt: 1000, vol: 250, unit: 'mcg/kg/hr', type: 7, color: 'blue', uTxt: 'txt-mcghr', info: "* Maintenance: 0.1~0.6 mcg/kg/hr (Max 0.7)\n* Standard mix: 200mcg + NS 50ml (NS premix)" },
@@ -416,7 +446,7 @@
     ];
 
     const ccuMix = { 'norepi': { amt: 4, vol: 50 }, 'epi': { amt: 4, vol: 50 }, 'dobu': { amt: 250, vol: 50 }, 'dopa': { amt: 200, vol: 50 } };
-    const micuMix = { 'precedex': { amt: 400, vol: 100 } }; // [NEW] MICU Precedex (Dexmedetomidine)
+    const micuMix = { 'precedex': { amt: 400, vol: 100 } };
     const ccuExclude = ['esmolol', 'nicar', 'diltia', 'iso', 'milri', 'rocu', 'hydro', 'fenta'];
     const sicuExclude = ['esmolol', 'rocu', 'hydro', 'fenta', 'diltia', 'iso'];
 
@@ -449,7 +479,7 @@
 
     function saveWeight() { 
         localStorage.setItem('sch_icu_weight', document.getElementById('bw').value); 
-        calcInduction(); // 체중 바뀔 때 Intubation 자동 재계산
+        calcInduction();
     }
     
     function toggleDarkMode() {
@@ -482,7 +512,6 @@
         if(targetId) document.getElementById(targetId).className = 'dept-btn active';
 
         if (forceReset) {
-            // 부서 변경 시 믹스 세팅 초기화
             ['norepi', 'epi', 'dobu', 'dopa', 'precedex'].forEach(id => { if (savedMix[id]) delete savedMix[id]; });
             localStorage.setItem('sch_icu_mix', JSON.stringify(savedMix));
             renderTable();
@@ -505,7 +534,6 @@
             let currentVol = d.vol;
             let currentSub = d.sub;
 
-            // Dept Specific Override
             if (currentDept === 'CCU' && ccuMix[d.id]) { 
                 currentAmt = ccuMix[d.id].amt; currentVol = ccuMix[d.id].vol; 
             }
@@ -554,7 +582,6 @@
         document.getElementById('empty-msg').style.display = count === 0 ? 'block' : 'none';
     }
 
-    // [NEW] Intubation Popup Logic
     function openIntubation() {
         document.getElementById('ind-bw-disp').innerText = document.getElementById('bw').value || 0;
         document.getElementById('intubation-panel').style.display = 'block';
@@ -580,7 +607,7 @@
     function calcHeparinAdjustment() { const weight = parseFloat(document.getElementById('bw').value) || 0; const currentRate = parseFloat(document.getElementById('hep-curr-rate').value) || 0; const aptt = document.getElementById('hep-aptt').value; let bolus = 0; let changeRateU = 0; let msg = "속도 조절 (Adjust Rate)"; if (aptt === '<35') { bolus = weight * 80; changeRateU = 4; } else if (aptt === '35-45') { bolus = weight * 40; changeRateU = 2; } else if (aptt === '46-70') { bolus = 0; changeRateU = 0; msg = "유지 (No Change)"; } else if (aptt === '71-90') { bolus = 0; changeRateU = -2; } else if (aptt === '>90') { bolus = 0; changeRateU = -3; msg = "1hr Stop & Decrease"; } else { document.getElementById('hep-adj-bolus').innerText = "0"; document.getElementById('hep-adj-rate').innerText = "0.0"; document.getElementById('hep-action-msg').innerText = "조절 후 속도"; return; } const changeCC = (weight * changeRateU) / 100; let newRate = currentRate + changeCC; if(newRate < 0) newRate = 0; document.getElementById('hep-adj-bolus').innerText = bolus; document.getElementById('hep-adj-rate').innerText = newRate.toFixed(1); document.getElementById('hep-action-msg').innerText = msg; }
     function updateMix(id) { const newAmt = parseFloat(document.getElementById(`amt_${id}`).value); const newVol = parseFloat(document.getElementById(`vol_${id}`).value); if(!savedMix[id]) savedMix[id] = {}; savedMix[id].amt = newAmt; savedMix[id].vol = newVol; localStorage.setItem('sch_icu_mix', JSON.stringify(savedMix)); calc(id); }
     function handleInput(id) { const val = document.getElementById(`input_${id}`).value; savedInputs[id][currentMode] = val; localStorage.setItem('sch_icu_inputs', JSON.stringify(savedInputs)); calc(id); }
-    function calc(id) { const drug = drugs.find(d => d.id === id); const weight = parseFloat(document.getElementById('bw').value) || 0; let currentAmt = parseFloat(document.getElementById(`amt_${id}`).value); let currentVol = parseFloat(document.getElementById(`vol_${id}`).value); if (isNaN(currentAmt)) currentAmt = d.amt; if (isNaN(currentVol)) currentVol = d.vol; const inputVal = parseFloat(savedInputs[id][currentMode]) || 0; const outputEl = document.getElementById(`output_${id}`); if (currentAmt === 0 || currentVol === 0) { outputEl.innerText = "Err"; return; } let conc = 0; if ([1, 4, 5].includes(drug.type)) { conc = (currentAmt * 1000) / currentVol; } else if (drug.type === 2) { conc = currentAmt / currentVol; } else if (drug.type === 3 || drug.type === 6) { conc = currentAmt / currentVol; } else if (drug.type === 7) { conc = currentAmt / currentVol; } let result = 0; if (currentMode === 0) { if (drug.type === 1) { if (weight > 0) result = (inputVal * weight * 60) / conc; } else if (drug.type === 2) { result = (inputVal * 60) / conc; } else if (drug.type === 3) { if (weight > 0) result = (inputVal * weight) / conc; } else if (drug.type === 4) { if (weight > 0) result = (inputVal * weight) / conc; } else if (drug.type === 5) { result = (inputVal * 60) / conc; } else if (drug.type === 6) { result = inputVal / conc; } else if (drug.type === 7) { if (weight > 0) result = (inputVal * weight) / conc; } } else { if (drug.type === 1) { if (weight > 0) result = (inputVal * conc) / (weight * 60); } else if (drug.type === 2) { result = (inputVal * conc) / 60; } else if (drug.type === 3) { if (weight > 0) result = (inputVal * conc) / weight; } else if (drug.type === 4) { if (weight > 0) result = (inputVal * conc) / weight; } else if (drug.type === 5) { result = (inputVal * conc) / 60; } else if (drug.type === 6) { result = inputVal * conc; } else if (drug.type === 7) { if (weight > 0) result = (inputVal * conc) / weight; } } outputEl.innerText = inputVal === 0 ? "0.00" : result.toFixed(2); }
+    function calc(id) { const drug = drugs.find(d => d.id === id); const weight = parseFloat(document.getElementById('bw').value) || 0; let currentAmt = parseFloat(document.getElementById(`amt_${id}`).value); let currentVol = parseFloat(document.getElementById(`vol_${id}`).value); if (isNaN(currentAmt)) currentAmt = drug.amt; if (isNaN(currentVol)) currentVol = drug.vol; const inputVal = parseFloat(savedInputs[id][currentMode]) || 0; const outputEl = document.getElementById(`output_${id}`); if (currentAmt === 0 || currentVol === 0) { outputEl.innerText = "Err"; return; } let conc = 0; if ([1, 4, 5].includes(drug.type)) { conc = (currentAmt * 1000) / currentVol; } else if (drug.type === 2) { conc = currentAmt / currentVol; } else if (drug.type === 3 || drug.type === 6) { conc = currentAmt / currentVol; } else if (drug.type === 7) { conc = currentAmt / currentVol; } let result = 0; if (currentMode === 0) { if (drug.type === 1) { if (weight > 0) result = (inputVal * weight * 60) / conc; } else if (drug.type === 2) { result = (inputVal * 60) / conc; } else if (drug.type === 3) { if (weight > 0) result = (inputVal * weight) / conc; } else if (drug.type === 4) { if (weight > 0) result = (inputVal * weight) / conc; } else if (drug.type === 5) { result = (inputVal * 60) / conc; } else if (drug.type === 6) { result = inputVal / conc; } else if (drug.type === 7) { if (weight > 0) result = (inputVal * weight) / conc; } } else { if (drug.type === 1) { if (weight > 0) result = (inputVal * conc) / (weight * 60); } else if (drug.type === 2) { result = (inputVal * conc) / 60; } else if (drug.type === 3) { if (weight > 0) result = (inputVal * conc) / weight; } else if (drug.type === 4) { if (weight > 0) result = (inputVal * conc) / weight; } else if (drug.type === 5) { result = (inputVal * conc) / 60; } else if (drug.type === 6) { result = inputVal * conc; } else if (drug.type === 7) { if (weight > 0) result = (inputVal * conc) / weight; } } outputEl.innerText = inputVal === 0 ? "0.00" : result.toFixed(2); }
     function calcAll() { activeDrugs.forEach(id => { if(document.getElementById(`input_${id}`)) calc(id); }); }
     function changeUnit(id) { const select = document.getElementById('unit_' + id); const selectedOption = select.options[select.selectedIndex]; const newUnit = selectedOption.value; const newType = parseInt(selectedOption.getAttribute('data-type')); const drug = drugs.find(d => d.id === id); if (drug) { drug.unit = newUnit; drug.type = newType; calc(id); const outputCell = document.querySelector('#output_' + id).parentElement; let doseUnit = newUnit.replace('Unit','U'); let outputUnit = currentMode === 0 ? 'cc/hr' : doseUnit; const currentVal = document.getElementById('output_' + id).innerText; outputCell.innerHTML = '<span id="output_' + id + '" class="res-val">' + currentVal + '</span><span class="res-unit">' + outputUnit + '</span>'; } }
     function copyMixInfo(id, unit, e) { e.stopPropagation(); const drug = drugs.find(d => d.id === id); const curAmt = document.getElementById(`amt_${id}`).value; const curVol = document.getElementById(`vol_${id}`).value; const text = `${drug.name} ${curAmt}${unit} + (   ) ${curVol}cc`; navigator.clipboard.writeText(text).then(() => { alert(`[라벨 복사 완료]\n${text}`); }); }
